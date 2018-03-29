@@ -50,7 +50,7 @@ whether the modal is being closed (true) or dismissed.
 - First page:
 ![firstpage](https://user-images.githubusercontent.com/35361302/38087309-471c2a8a-3375-11e8-904c-8aacf07b6ed7.png)
 - $model view:
-
+![model](https://user-images.githubusercontent.com/35361302/38087641-7ad5cf06-3376-11e8-95f6-a9aa4fc49127.png)
 - Form validation(invalid):
 ![invaliddata](https://user-images.githubusercontent.com/35361302/38087322-53326f28-3375-11e8-9cf9-0cac616eb3c3.png)
 - Form validation(valid):
