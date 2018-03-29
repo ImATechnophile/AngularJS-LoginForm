@@ -1,0 +1,91 @@
+<div class="modal-header" ng-hide="Boolean">
+    <h3>Create A New Account!</h3>
+</div>
+
+<div ng-show="pretag">
+<div class="modal-header" ng-show="Boolean">
+    <h3>User details!</h3>
+</div>
+</div>
+
+<form name="form.userForm" ng-submit="submitForm()" novalidate>
+    <div class="modal-body" ng-hide="Boolean">
+        <!-- NAME -->
+        <div class="form-group" ng-class="{ 'has-error' : form.userForm.name.$invalid && !form.userForm.name.$pristine }">
+            <label>Name</label>
+            <input type="text" name="name" class="form-control" ng-model="name" required>
+            <p ng-show="form.userForm.name.$invalid && !form.userForm.name.$pristine" class="help-block">You name is required.</p>
+        </div>
+
+        <!-- USERNAME -->
+        <div class="form-group" ng-class="{ 'has-error' : form.userForm.username.$invalid && !form.userForm.username.$pristine }">
+            <label>Username</label>
+            <input type="text" name="username" class="form-control" ng-model="username" ng-minlength="3" ng-maxlength="10" required>
+            <p ng-show="form.userForm.username.$error.minlength" class="help-block">Username is too short.</p>
+            <p ng-show="form.userForm.username.$error.maxlength" class="help-block">Username is too long.</p>
+        </div>
+
+        <!-- EMAIL -->
+        <div class="form-group" ng-class="{ 'has-error' : form.userForm.email.$invalid && !form.userForm.email.$pristine }">
+            <label>Email</label>
+            <input type="email" name="email" class="form-control" ng-model="email" required>
+            <p ng-show="form.userForm.email.$invalid && !form.userForm.email.$pristine" class="help-block">Enter a valid email.</p>
+        </div>
+    </div>
+   <div ng-show="pretag">
+    <div class="modal-body" ng-show="Boolean" >
+        <!--table design -->
+        <div class="table-responsive com-table">
+
+            <table class="table table-bordered table-hover table-striped">
+                <thead>
+                <tr>
+                    <th width="5%" >ID</th>
+                    <th width="20%" >NAME</th>
+                    <th width="15%">USERNAME</th>
+                    <th width="15%">EMAIL</th>
+                    <th width="5%">CHECKBOX</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                <tr ng-repeat="CU in CustomerList">
+                    <td width="5%" >{{CU.Id}}</td>
+                    <td width="20%" >{{CU.Name}}</td>
+                    <td width="15%">{{CU.Username}}</td>
+                    <td width="15%">{{CU.Email}}</td>
+                    <td width="5%"><input type="checkbox" ng-model="CU.IsChecked" ng-change="checkBoxChange(CU)" /></td>
+                    <!--<td width="5%"><input type="checkbox" ng-model="CU.IsChecked" ng-change="checkBoxChange(CU)" ng-click=""/></td>-->
+                </tr>
+                </tbody>
+            </table>
+
+            <div class="collapse" >
+                <div class="well">
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+
+    <div ng-show="pretag">
+    <div class="modal-footer">
+        <p class="likes" ng-hide="DisableFlag" ng-show="Boolean">+{{AddEvent}} </p>
+        <button type="submit" class="btn btn-primary" ng-disabled="form.userForm.$invalid" ng-hide="Boolean">ADD</button>
+        <input type="button" value="json" class="btn btn-primary" ng-click="JsonView()" ng-hide="jsonButton" />
+
+
+
+        <input type="button" value="SHOW" class="btn btn-primary" ng-hide="DisableFlag" ng-click="show()" />
+        <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
+    </div>
+    </div>
+    <div class="modal-body" ng-show="Boolean1">
+        <pre >{{list1 | json }}</pre>
+        <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
+    </div>
+</form>
+
