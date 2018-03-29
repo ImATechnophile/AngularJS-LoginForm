@@ -59,10 +59,17 @@ whether the modal is being closed (true) or dismissed.
 ![firstadd](https://user-images.githubusercontent.com/35361302/38087356-6a3b9870-3375-11e8-8170-688d321d70e3.png)
 - Multiple datas added:
 ![moredata](https://user-images.githubusercontent.com/35361302/38087364-70db5f08-3375-11e8-89f2-b34e12432a03.png)
-- Grid view:
+- Grid view(after clicking show button):
 ![showtable](https://user-images.githubusercontent.com/35361302/38087381-787cf582-3375-11e8-8442-816e8b9e96f2.png)
 - Selecting the details:
 ![checklist](https://user-images.githubusercontent.com/35361302/38087391-7e721c92-3375-11e8-8d13-51da9347aa4a.png)
 - Selected value showed as a JSON:
 ![jsonfull](https://user-images.githubusercontent.com/35361302/38087399-873ddfd2-3375-11e8-821a-94c70c8653e9.png)
+
+## Authors
+
+* **Saravana Prakash** - *Initial work* - [Projects in python](https://bitbucket.org/dashboard/overview)
+* **Linkedin** - *Saravana Prakash* - [About myself](https://www.linkedin.com/in/saravana-prakash-j-116035124/)
+
+
 
