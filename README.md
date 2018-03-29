@@ -1,6 +1,6 @@
 # AngularJS-LoginForm
   A simple login form with client side form validation.
-## Used angualr services:
+## Used angular services:
   - $model
   - $log
 ### Short description about $model:
