@@ -45,3 +45,24 @@ Finally, a `modal.closing` event is broadcast to the modal scope before the moda
 preventDefault on the event, then the modal will remain open.  The $close and $dismiss methods return true if the 
 event was allowed.  The event itself includes a parameter for the result/reason and a boolean parameter that indicates
 whether the modal is being closed (true) or dismissed.
+
+### ScreenShots:
+- First page:
+![firstpage](https://user-images.githubusercontent.com/35361302/38087309-471c2a8a-3375-11e8-904c-8aacf07b6ed7.png)
+- $model view:
+
+- Form validation(invalid):
+![invaliddata](https://user-images.githubusercontent.com/35361302/38087322-53326f28-3375-11e8-9cf9-0cac616eb3c3.png)
+- Form validation(valid):
+![valid](https://user-images.githubusercontent.com/35361302/38087329-59b0ac48-3375-11e8-8d07-7a4573d799eb.png)
+- Single data added:
+![firstadd](https://user-images.githubusercontent.com/35361302/38087356-6a3b9870-3375-11e8-8170-688d321d70e3.png)
+- Multiple datas added:
+![moredata](https://user-images.githubusercontent.com/35361302/38087364-70db5f08-3375-11e8-89f2-b34e12432a03.png)
+- Grid view:
+![showtable](https://user-images.githubusercontent.com/35361302/38087381-787cf582-3375-11e8-8442-816e8b9e96f2.png)
+- Selecting the details:
+![checklist](https://user-images.githubusercontent.com/35361302/38087391-7e721c92-3375-11e8-8d13-51da9347aa4a.png)
+- Selected value showed as a JSON:
+![jsonfull](https://user-images.githubusercontent.com/35361302/38087399-873ddfd2-3375-11e8-821a-94c70c8653e9.png)
+
