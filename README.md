@@ -68,7 +68,7 @@ whether the modal is being closed (true) or dismissed.
 
 ## Authors
 
-* **Saravana Prakash** - *Initial work* - [Projects in python](https://bitbucket.org/ImATechnophile95/)
+* **Saravana Prakash** - *Initial work* - [Projects in python](https://bitbucket.org/ImATechnophile-Personal/)
 * **Linkedin** - *Saravana Prakash* - [About myself](https://www.linkedin.com/in/saravana-prakash-j-116035124/)
 
 
